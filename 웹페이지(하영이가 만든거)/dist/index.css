@@ -1,0 +1,394 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap");
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 0;
+  font-family: "Roboto", "Nanum Gothic", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+}
+
+h3 {
+  margin: 0;
+}
+
+h4 {
+  margin: 0;
+}
+
+h5 {
+  margin: 0;
+}
+
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+picture {
+  font-size: 0;
+}
+picture img {
+  max-width: 100%;
+}
+
+.motion {
+  display: block;
+  overflow: hidden;
+}
+.motion .motion-content {
+  display: block;
+  transform: translateY(100%);
+}
+
+section.on .section-content .motion .motion-content {
+  transform: translateY(0%);
+}
+
+[data-motion=content] {
+  display: block;
+  transform: translateY(80px);
+  opacity: 0;
+}
+
+article.on .article-content [data-motion=content] {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  box-shadow: 0px -5px 10px 0px #000;
+  z-index: 10;
+}
+header .logo {
+  color: inherit;
+  margin-left:25px;
+  text-decoration: none;
+  padding: 6px;
+}
+header .logo picture {
+  display: block;
+  width: 80px;
+}
+header h1 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+}
+header nav {
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+}
+header nav a {
+  color: inherit;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+header nav > div {
+  position: relative;
+}
+header nav > div > a {
+  display: block;
+  font-size: 16px;
+  padding: 16px;
+}
+header nav > div:hover > a {
+  color:  burlywood;
+}
+header nav > div:hover ul {
+  visibility: visible;
+  opacity: 1;
+  margin-top: 0;
+}
+header nav ul {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  margin-top: 10px;
+  transition: opacity 400ms, margin-top 400ms;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 120px;
+  padding: 16px 0;
+  background-color: #fff;
+  box-shadow: 0px 2px 3px 0px #444;
+  border-radius: 8px;
+  text-align: center;
+}
+header nav ul li {
+  list-style: none;
+}
+header nav ul li a {
+  display: block;
+  font-size: 18px;
+  line-height: 1.25;
+  padding: 8px 16px;
+  white-space: nowrap;
+}
+header nav ul li a:hover {
+  color:burlywood;
+  background-color: rgba(200, 200, 200, 0.15);
+}
+
+main h2 {
+  font-weight: 800;
+  font-size: 72px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+main h3 {
+  font-weight: 700;
+  font-size: 24px;
+}
+main .description p {
+  font-size: 18px;
+}
+main section + section {
+  padding-top: 120px;
+}
+main section .section-content {
+  position: relative;
+}
+main section .section-content .text {
+  text-align: center;
+}
+main section .section-content .text .description {
+  margin-top: 20px;
+}
+main section .section-content .text .description p + p {
+  margin-top: 16px;
+}
+main section .section-articles article {
+  font-size: 0;
+  text-align: center;
+  padding: 0 80px 120px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+main section .section-articles article:first-child {
+  padding-top: 0;
+}
+main section .section-articles article .article-content {
+  position: relative;
+}
+main section .section-articles article .article-content .object {
+  display: flex;
+  justify-content: space-between;
+}
+main section .section-articles article .article-content .object > * {
+  flex: 1;
+}
+main section .section-articles article h3 {
+  font-weight: 700;
+  font-size: 48px;
+  padding: 40px 0;
+}
+main section .section-articles article .text {
+  text-align: center;
+}
+main section .section-articles article .text .description {
+  margin-top: 20px;
+}
+main section .section-articles article .text .description p + p {
+  margin-top: 32px;
+}
+
+#harmony {
+  padding-top: 65px;
+}
+#harmony .section-content picture {
+  display: block;
+  height: calc(100vh - 200px);
+  background: url(./images/concepts-4916635.jpg) center/cover fixed;
+  filter: brightness(0.5);
+}
+#harmony .section-content picture img {
+  opacity: 0;
+}
+#harmony .section-content .text {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100%;
+  color: #fff;
+  text-shadow: 0px 0px 15px #000;
+}
+#harmony .section-content .text .description {
+  color: #eee;
+}
+#harmony #upcycle .article-content {
+  align-items: center;
+}
+#harmony #upcycle .article-content .object picture {
+  display: flex;
+  align-items: center;
+  flex-grow: 0;
+  flex-basis: calc((100% - 80px) / 2);
+  overflow: hidden;
+}
+#harmony #upcycle .article-content .object span {
+  align-self: center;
+  font-size: 32px;
+}
+
+#concept #motive .article-content .object {
+  flex-wrap: wrap;
+}
+#concept #motive .article-content .object picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 0;
+  flex-basis: calc((100% - 80px) / 3);
+  margin-bottom: 40px;
+  overflow: hidden;
+}
+
+#process #make-process .article-content .object {
+  flex-wrap: wrap;
+}
+#process #make-process .article-content .object > div {
+  position: relative;
+  flex-grow: 0;
+  flex-basis: calc((100% - 180px) / 4);
+  margin-bottom: 60px;
+}
+#process #make-process .article-content .object > div picture {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+#process #make-process .article-content .object > div::after {
+  content: "⟶";
+  font-size: 24px;
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translateY(-50%);
+  margin-left: 16px;
+}
+#process #make-process .article-content .object > div:last-child::after {
+  content: none;
+}
+#process #modeling .article-content .object {
+  flex-wrap: wrap;
+}
+#process #modeling .article-content .object > div {
+  position: relative;
+  flex-grow: 0;
+  flex-basis: calc((100% - 160px) / 4);
+}
+#process #modeling .article-content .object > div picture {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+#process #modeling .article-content .object > div::after {
+  font-size: 24px;
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translateY(-50%);
+  margin-left: 20px;
+}
+#process #modeling .article-content .object > div:nth-child(1)::after {
+  content: "+";
+}
+#process #modeling .article-content .object > div:nth-child(2)::after {
+  content: "−";
+}
+
+#behind #our-team .article-content .object {
+  flex-wrap: wrap;
+}
+#behind #our-team .article-content .object .profile {
+  position: relative;
+  display: flex;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 5px 0px #444;
+  overflow: hidden;
+  flex-grow: 0;
+  flex-basis: calc((100% - 40px) / 2);
+  margin-bottom: 40px;
+}
+#behind #our-team .article-content .object .profile > div {
+  flex: 1;
+  margin-left: 12px;
+  text-align: left;
+}
+#behind #our-team .article-content .object .profile > div strong {
+  display: block;
+  font-weight: 700;
+  font-size: 20px;
+}
+#behind #our-team .article-content .object .profile > div p {
+  font-size: 14px;
+  margin-top: 10px;
+  word-break: break-all;
+}
+
+#outro {
+  padding-bottom: 0;
+}
+#outro .section-content picture {
+  display: block;
+  height: 500px;
+  background: url(./images/harmony.jpg) center/cover fixed;
+  filter: brightness(0.5);
+}
+#outro .section-content picture img {
+  height: 0;
+  opacity: 0;
+}
+#outro .section-content .text {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100%;
+  color: #fff;
+  text-shadow: 0px 0px 15px #000;
+}
+#outro .section-content .text .description {
+  color: #eee;
+}
+
+/*# sourceMappingURL=index.css.map */

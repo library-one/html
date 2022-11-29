@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>오늘은?</title>
+<style type = "text/css">
+    p{font-size: 10pt; line-height: 24pt;}
+    h3{color: red; background-color: #90ff00; margin-left:60px;margin-right:60px;}
+    h3:after{content:"(ⓒslimg)";font-size: 10pt; background-color: yellow;}
+    p{background-color: #ffff80;padding:10px;border: medium dotted red;}
+    #next{line-height: 2pt; margin-left:30%; padding:8px; border:4ps double blue;}
+    strong, .red1{background-color: silver;margin:10px;padding:6px;border:1px solid black;}
+    div{
+        border:3px solid #74ad21;
+        max-width:300px;
+        margin:auto;
+        height: 100px;
+        background-color: white;
+    }
+    .box1{position:static;}
+    .box2{position:relative;left:30px;top:-30px;}
+    .box3{position:relative;left:60px;top:-60px;}
+    .box4{position:absolute;left:75px;top:75px;}
+    .box5{position:fixed; bottom:10px; right:10px;}
+</style>    
+</head>
+
+<body>
+    <h3><Strong>스타일시트</Strong>이해하기</h3>
+    <p>이 예제는<strong>박스모델</strong>의 개념을 설명합니다.
+    <br><span class="red1">클래스</span>와 ID로 스타일을 지정합니다.</p>
+    <p id="next">다음 예제로 이어집니다.</p>
+    <h2>Box position example</h2>
+    <hr>
+    <div class="box1">Box-1:static</div>
+    <div class="box2">Box-2:relative</div>
+    <div class="box3">Box-3:relative</div>
+    <hr>
+    <div class="box4">Box-4:absolute</div>
+    <div class="box5">Box-5:fixed</div>
+    
+    
+</body>
+
+
+</html>

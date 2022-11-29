@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "watch": "npx sass --watch src:dist",
+    "build": "npx sass src:dist --style=compressed --no-source-map"
+  },
+  "devDependencies": {
+    "sass": "^1.56.1"
+  }
+}

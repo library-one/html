@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+
+*, ::before, ::after {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 0;
+	font-family: "Roboto", "Nanum Gothic", sans-serif;
+}
+
+body {
+	margin: 0;
+}
+
+ul {
+	margin: 0;
+}
+
+@for $index from 1 to 7 {
+	h#{$index} {
+		margin: 0;
+	}
+}
+
+p {
+	margin: 0;
+}
+
+picture {
+	font-size: 0;
+	
+	img {
+		max-width: 100%;
+	}
+}
+
+@mixin ir-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+}

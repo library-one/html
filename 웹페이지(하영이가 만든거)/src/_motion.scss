@@ -1,0 +1,39 @@
+.motion {
+	display: block;
+	overflow: hidden;
+
+	.motion-content {
+		display: block;
+		transform: translateY(100%);
+	}
+}
+
+section {
+	&.on {
+		.section-content {
+			.motion {
+				.motion-content {
+					transform: translateY(0%);
+				}
+			}
+		}
+	}
+}
+
+[data-motion="content"] {
+	display: block;
+
+	transform: translateY(80px);
+	opacity: 0;
+}
+
+article {
+	&.on {
+		.article-content {
+			[data-motion="content"] {
+				transform: translateY(0);
+				opacity: 1;
+			}
+		}
+	}
+}

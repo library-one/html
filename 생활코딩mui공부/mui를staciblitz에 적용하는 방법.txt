@@ -1,0 +1,12 @@
+DEPENDENCIES에 
+@mui/material입력
+모두 인스톨
+
+원하는 옵션을 맨위에서 import 시키면서 쓰면됨
+required 필수 입려값
+fullwidth 화면 이용
+autoComplete 주로 모바일에서 사용되는데 email이면 emil 형식을 자동으로 입력
+autoFocus 자동으로 지정자로 시작함 
+control={<Checkbox value="remember" color="primary" />}
+        label="Remember me"
+체크박스 칸안에 Remmember me 라는 텍스트도 누를시 체크박스에 체크 가능
