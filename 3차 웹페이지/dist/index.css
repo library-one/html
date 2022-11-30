@@ -242,8 +242,8 @@ main section .section-articles article .text .description p + p {
 #harmony .section-content picture {
   display: block;
   height: calc(100vh - 100px);
-  background: url(./images/concepts-4916635.jpg) center/cover fixed;
-  filter: brightness(0.5);
+  background: url(./images/earth-2841056.jpg) center/cover fixed;
+  filter: brightness(0.8);
 }
 #harmony .section-content picture img {
   opacity: 0;
