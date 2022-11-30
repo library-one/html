@@ -40,7 +40,9 @@ h5 {
 h6 {
   margin: 0;
 }
-
+h7{
+  margin:0;
+}
 p {
   margin: 0;
 }
@@ -53,6 +55,20 @@ picture img {
   margin-left:10px;
 }
 
+picture1 {
+  font-size: 0;
+}
+picture1 img {
+  max-width: 50%;
+  margin-left:20%;
+}
+picture2 {
+  font-size: 0;
+}
+picture2 img {
+  max-width: 50%;
+  margin-left:auto;
+}
 .motion {
   display: block;
   overflow: hidden;
@@ -182,6 +198,18 @@ main h2 {
 main h3 {
   font-weight: 700;
   font-size: 24px;
+  text-align: center;
+}
+text h3{
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+}
+main h7{
+  font-weight: 600;
+  font-size: 20px;
+  text-align: left;
+  margin:auto;
 }
 main .description p {
   font-size: 18px;
